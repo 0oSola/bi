@@ -1,0 +1,40 @@
+{
+    "totalNum":10,
+    "customline": [
+        {
+            "PageSourceId": "table_0",
+            "PageTargetId": "chart_0"
+        },
+        {
+            "PageSourceId": "table_0",
+            "PageTargetId": "sf_0"
+        }
+    ],
+    "customWidgets": [
+        {
+            "BlockId": "table_0",
+            "BlockClass": "table",
+            "BlockHtml": "<span><i class='fa fa-anchor dragPoint item-dragPoint'></i>表54543545454543543543543 1<b class='glyphicon glyphicon-remove delete-ele'></b><div class='cz-box'><i class='fa fa-edit item-edit click-item' data-id='table_0'></i><div></div></div></span>",
+            "BlockDataID": "alias1_table-11",
+            "BlockProperties": "{'type':1,'request':'select * from 表54543545454543543543543 1'}",
+            "BlockX": 76,
+            "BlockY": 138
+        },
+        {
+            "BlockId": "sf_0",
+            "BlockClass": "sf",
+            "BlockHtml": "<span>k-means<b class='glyphicon glyphicon-remove delete-ele'></b><div class='cz-box'><i class='fa fa-play-circle item-edit click-item' data-id='sf_0'></i><div></div></div></span>",
+            "BlockX": 370,
+            "BlockY": 136,
+            "BlockSFType": "k-means"
+        },
+        {
+            "BlockId": "chart_0",
+            "BlockClass": "chart",
+            "BlockChartType": "spline",
+            "BlockHtml": "<span>曲线图<b class='glyphicon glyphicon-remove delete-ele'></b><div class='cz-box'><i class='fa fa-play-circle item-edit click-item' data-id='chart_0'></i><div></div></div></span>",
+            "BlockX": 248,
+            "BlockY": 282
+        }
+    ]
+}

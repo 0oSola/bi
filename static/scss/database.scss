@@ -1,0 +1,150 @@
+/* Scss Document */
+
+html,body{
+	background:#f1f1f1;
+	font-family:"Microsoft YaHei";
+}
+
+.header-title{
+	background:#fff;
+	height:60px;
+	width:100%;
+	font-size:20px;
+	font-weight:bold;
+	.title{
+		padding:20px;
+		border-bottom:1px solid #ccc;
+	}
+}
+
+.ds-content{
+	margin:20px;
+	.ds-item{
+		margin:10px 0;
+		.title{
+			width:160px;
+		}
+		input{
+			width:250px;
+			height:30px;
+		}
+		select{
+			width:251px;
+			height:30px;
+			margin-left:-5px;
+		}
+
+	}
+}
+
+.ds-menu{
+	margin:20px;	
+}
+
+.top-menu{
+	float:right;
+	margin-top:-47px;
+	margin-right:20px;
+}
+
+/*datalist*/
+.dl-content{
+	margin:20px;
+	background:#fff;
+	.db-th{
+		background:#357ebd;
+		color:#fff;
+	}
+}
+
+.db-remove{
+	cursor:pointer;
+}
+
+.db-edit{
+	cursor:pointer;
+	margin-left:10px;
+}
+
+/*work list*/
+
+.work-edit,.work-remove{
+	cursor:pointer;
+}
+
+.cz-box{
+	a,i{
+		color:#333;
+		text-decoration:none;
+		margin-right:10px;
+	}
+}
+
+.ds-row{
+	margin:10px;
+	.title{
+		width:80px;
+	}
+	.item{
+		width:200px;
+		background:#fff;
+	}
+}
+
+
+.db-edit{
+	background:#1c71a9;
+	padding:6px 10px;
+	border-radius:4px;
+	color:#fff;
+	cursor:pointer;
+	font-size:14px;
+	text-decoration:none;
+	&:hover{
+		color:#fff!important;
+		background:#144e75;
+	}
+	&:visited,&:link{
+		text-decoration:none;
+		color:#fff!important;
+	}
+}
+
+.db-preview{
+	background:#f05423;
+	padding:6px 10px;
+	border-radius:4px;
+	color:#fff;
+	cursor:pointer;
+	font-size:14px;
+	text-decoration:none;
+	&:hover{
+		color:#fff!important;
+		background:#b7431e;
+	}
+	&:visited,&:link{
+		text-decoration:none;
+		color:#fff!important;
+	}
+}
+
+.db-remove{
+	cursor:pointer;
+	border:1px solid #ccc;
+	border-radius:4px;
+	padding:6px 10px;
+	font-size:14px;
+	text-decoration:none;
+	&:hover,&:visited,&:active,&:link{
+		color:#333;	
+	}
+	&:hover{
+		background:#f8f8f8;
+	}
+}
+
+.add-database{
+	&:hover{
+		color:#fff;
+	}
+}

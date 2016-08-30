@@ -1,0 +1,139 @@
+/* Scss Document */
+
+.guide-box{
+	display:-webkit-box;
+}
+.guide-content{
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+	box-flex:1;
+	border:1px solid #ccc;
+	border-radius:4px;
+	height:120px;
+	padding:5px 0;
+	color:#333;
+	background:#F8F8F8;
+	position:relative;
+	.fa{
+		right:10px;
+		font-size:102px!important;
+		position:absolute;
+		z-index:10;
+		opacity:0.2;
+	}
+	.title{
+		z-index:20;
+		font-size:18px;
+		font-weight:600;
+		height:40px;
+		line-height:40px;
+		padding:0 10px 5px 10px;
+		margin-bottom:5px;
+		background-image:-webkit-gradient(linear,50% 0,0 100%,
+			from(transparent),
+			color-stop(.5,transparent),
+			color-stop(.5,#d9d9d9),
+			color-stop(.9,#fff),
+			to(#fff)       
+		),
+		-webkit-gradient(linear,50% 0,100% 100%,
+				from(transparent),
+				color-stop(.5,transparent),
+				color-stop(.5,#d9d9d9),
+				color-stop(.9,#fff),
+				to(#fff)                                            
+		);                             
+		background-size:12px 6px;
+		background-repeat:repeat-x;
+		background-position:0 100%;
+		/*border-bottom:1px solid #ccc;*/
+	}
+	.item{
+		z-index:20;
+		height:30px;
+		line-height:30px;
+		font-size:16px;
+		padding:0 10px;
+		color:#333;
+	}
+	
+	&:not(:last-child){
+		margin-right:20px;
+	}
+	&:nth-child(1){
+		border-left:7px solid #f05423; 
+	}
+	&:nth-child(2){
+		border-left:7px solid #faa61a; 
+		/*border-left:7px solid #333; */
+	}
+	&:nth-child(3){
+		border-left:7px solid #1c71a9; 
+
+	}
+
+	&:nth-child(4){
+		border-left:7px solid #faa61a; 
+	}	
+	
+	
+}
+
+
+.shortcut-box{
+	display:-webkit-box;
+	display:-moz-box;
+	width:100%;
+	
+	.shortcut-item{
+		display:block;
+		text-decoration:none!important;
+		cursor:pointer;
+		text-align:center;
+		padding:30px;
+		-webkit-box-flex:1;
+		-moz-box-flex:1;
+		box-flex: 1;
+		background:#fff;
+		color:#333;
+		border:1px solid #ccc;
+		font-size:16px;
+		.title{
+			font-weight:600;
+		}
+		&:hover{
+			box-shadow: 5px 5px 3px #ccc;
+		}
+		i{
+			color:#999;
+			padding:15px;
+			font-size:40px;
+			margin-bottom:5px;
+			border:1px solid #999;
+			border-radius:300px;
+		}
+		&:not(:last-child){
+			margin-right:20px;
+		}
+		&:nth-child(1){
+			i{
+				color:#f05423;
+				border:1px solid #f05423;
+			}
+		}
+		&:nth-child(2){
+			i{
+				color:#faa61a;
+				border:1px solid #faa61a;
+			}
+		}
+		&:nth-child(3){
+			i{
+				color:#1c71a9;
+				border:1px solid #1c71a9;
+			}
+	
+		}
+	}
+}
+
