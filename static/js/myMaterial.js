@@ -3,8 +3,8 @@
 	
 	
 	//test
-	/*var testFinJson = '{"data_list": [["uuid","name","../static/img/test.png","project_name","create_time","size","creater",1],["uuid","name","url","project_name","create_time","size","creater",0]],"totalCount":20,"error_messge":"","error_code":0}';
-	var data1 = JSON.parse(testFinJson);*/
+	var testFinJson = '{"data_list": [["1c23fdsd0ad12","k均值结果图","../static/img/test.png","项目1","2015-10-01","50kb","Jonny",1],["1c23fdsd0ad21","k均值结果集","url","项目1","2015-10-01","15kb","Jonny",0]],"totalCount":10,"error_messge":"","error_code":0}';
+	var data1 = JSON.parse(testFinJson);
 	//end test
 	
 	var pageSize = 10;
@@ -126,9 +126,9 @@
 			var pageNo = $(ele).attr("data-pageNo");
 			
 			//test
-			/*eventHandler.loadMaterial(data1.data_list);
+			eventHandler.loadMaterial(data1.data_list);
 			var totalPage = Math.ceil(data1.totalCount / pageSize);
-			eventHandler.bindFinshPage($(ele).find(".pageContainer"),totalPage);*/
+			eventHandler.bindFinshPage($(ele).find(".pageContainer"),totalPage);
 			//end test
 			
 			$.ajax({
@@ -301,7 +301,7 @@
 					td_tpl += '<td class="material-url"><img style="width:100px;" src="'+ele[2]+'"/></td>';
 					td_tpl += '<td class="material-type">图表</td>';
 				}else{
-					td_tpl += '<td class="material-url"><img style="width:30px;" src="/static/img/txt.png"/></td>';
+					td_tpl += '<td class="material-url"><img style="width:30px;" src="../static/img/txt.png"/></td>';
 					td_tpl += '<td class="material-type">算法结果集</td>';
 				}
 				

@@ -3,7 +3,7 @@
 	
 	
 	//test
-	var testReportJson = '{"data_list": [["uuid","report_name","project_name","create_time","creater","url"],["uuid","report_name","project_name","create_time","creater","url"]],"totalCount":10,"error_messge":"","error_code":0}';
+	var testReportJson = '{"data_list": [["a880a285-a9f7-4785-af44-4899ec7e02d0","3个月报表","项目1","Jonny","Jonny","url"],["f692b6a6-19f8-4026-bce5-4238b1537326","季度报表","项目1","Jonny","","url"]],"totalCount":10,"error_messge":"","error_code":0}';
 	var data1 = JSON.parse(testReportJson);
 	//end test
 	
@@ -38,9 +38,9 @@
 			var pageNo = $(ele).attr("data-pageNo");
 			
 			//test
-			/*eventHandler.showReportList(data1.data_list);
+			eventHandler.showReportList(data1.data_list);
 			var totalPage = Math.ceil(data1.totalCount / pageSize);
-			eventHandler.bindPage($(ele).find(".pageContainer"),totalPage);*/
+			eventHandler.bindPage($(ele).find(".pageContainer"),totalPage);
 			//end test
 			
 			$.ajax({

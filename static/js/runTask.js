@@ -4,10 +4,10 @@
 	
 	//test
 
-		var testFinJson = '{"data_list": [["uuidFin","name","project_name","create_time","finish_time",100,0,"creater","consume","0"],["uuid","name","project_name","create_time","finish_time",100,0,"creater","consume","1"]],"totalCount":20,"error_messge":"","error_code":0}';
+		var testFinJson = '{"data_list": [["uuidFin","k-均值","项目1","2015-10-01","2015-10-01",100,0,"Jonny","0.5","0"],["uuid","密度聚类","项目1","2015-10-01","2015-10-01",100,0,"Jonny","0.3","1"]],"totalCount":10,"error_messge":"","error_code":0}';
 		var data1 = JSON.parse(testFinJson);
 		
-	    var testUnJson = '{"data_list": [["uuidUnFin","name","project_name","create_time",80,2,"creater"],["uuid","name","project_name","create_time",30,1,"creater"]],"totalCount":10,"error_messge":"","error_code":0}';
+	    var testUnJson = '{"data_list": [["uuidUnFin","name","项目1","2015-10-05",80,2,"creater"],["uuid","name","project_name","create_time",30,1,"creater"]],"totalCount":10,"error_messge":"","error_code":0}';
 		var data2 = JSON.parse(testUnJson);
 
 		//end test
@@ -45,7 +45,7 @@
 			$("#spin").css("height",$("body").height());	
 			
 			//test
-			/*var data = '{"data":"1234","error_messge":"","error_code":0}';
+			var data = '{"data":"1234","error_messge":"","error_code":0}';
 			var dataJson = JSON.parse(data);
 			
 			layer.open({
@@ -60,7 +60,7 @@
 					addition = "";
 					logupLoad(buttonName,addition);
 				}
-			});*/
+			});
 			//end test
 			
 			$.ajax({
@@ -102,7 +102,7 @@
 			
 			//test
 			//var testRunJson = '{"result_list": [["uuid","name","img","size","type"],["uuid","name","img","size","type"]],"totalCount":100,"error_messge":"","error_code":0}';
-			/*var testRunJson = '{"result_list": [["name","../static/img/test.png","size","1"],["name","../static/img/test.txt","size","0"]],"totalCount":100,"error_messge":"","error_code":0}';
+			var testRunJson = '{"result_list": [["k-均值图片","../static/img/test.png","50kb","1"],["k-均值文本","../static/img/test.txt","15kb","0"]],"totalCount":100,"error_messge":"","error_code":0}';
 			
 			var dataJson = JSON.parse(testRunJson);
 			if(dataJson.error_code==0){
@@ -110,7 +110,7 @@
 			}else{
 				$("#msg-content").html(dataJson.error_messge);
 				$("#msg-box").animate({top:"0"});
-			}*/
+			}
 			//end test
 			
 			
@@ -206,9 +206,9 @@
 			var pageNo = $(ele).attr("data-pageNo");
 			
 			//test
-			/*eventHandler.loadFinshtask(data1.data_list);
+			eventHandler.loadFinshtask(data1.data_list);
 			var totalPage = Math.ceil(data1.totalCount / pageSize);
-			eventHandler.bindFinshPage($(ele).find(".pageContainer"),totalPage);*/
+			eventHandler.bindFinshPage($(ele).find(".pageContainer"),totalPage);
 			//end test
 			
 			$.ajax({
